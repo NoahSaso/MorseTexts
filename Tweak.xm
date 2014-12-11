@@ -27,6 +27,8 @@ void AudioServicesStopSystemSound(SystemSoundID inSystemSoundID);
 	BBBulletin* bulletin = MSHookIvar<BBBulletin *>(arg1, "_activeBulletin");
 
     // Only attempt this when SMS convo. I'll add more apps later (such as Kik, WhatsApp, Viber, LINE, etc. It's just a matter of sticking the app ID here, I'll probably make it customizable in Settings, but that's for later)
+    //Enjoy the bundle ID of these apps. Didn't add them because I'd make a horrible mistake ;P
+    //net.whatsapp.WhatsApp : com.kik.chat : com.viber (apparently) : jp.naver.line
     if([[bulletin sectionID] isEqualToString:@"com.apple.MobileSMS"]) {
 
     	NSArray* morseArr = [[MCGMorseCodeConverter new] convertStringToMorseCodes:[bulletin message]]; // Array of dots, dashes, and spaces to represent each letter and word
