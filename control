@@ -1,0 +1,9 @@
+Package: com.sassoty.morsetexts
+Name: MorseTexts
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: Vibrate SMS notifications in morse code
+Maintainer: Sassoty <sassoty@gmail.com>
+Author: Sassoty <sassoty@gmail.com>
+Section: Tweaks
