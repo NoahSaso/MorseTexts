@@ -1,6 +1,5 @@
 ARCHS = arm64 armv7
-TARGET =: clang
-THEOS_BUILD_DIR = Packages
+TARGET = iphone:clang:latest
 
 include theos/makefiles/common.mk
 
@@ -13,3 +12,5 @@ include $(THEOS_MAKE_PATH)/tweak.mk
 
 after-install::
 	install.exec "killall -9 backboardd"
+SUBPROJECTS += Preferences
+include $(THEOS_MAKE_PATH)/aggregate.mk

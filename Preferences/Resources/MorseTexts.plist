@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Settings</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.sassoty.morsetexts</string>
+			<key>PostNotification</key>
+			<string>com.sassoty.morsetexts/preferencechanged</string>
+			<key>key</key>
+			<string>Enabled</string>
+			<key>label</key>
+			<string>Enabled</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerAlignment</key>
+			<integer>1</integer>
+			<key>footerText</key>
+			<string>Replaces text in banner with morse code.</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.sassoty.morsetexts</string>
+			<key>PostNotification</key>
+			<string>com.sassoty.morsetexts/preferencechanged</string>
+			<key>key</key>
+			<string>ReplaceMessageWithMorse</string>
+			<key>label</key>
+			<string>Replace Message with Morse Code</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Dot &amp; Letter Space Length</string>
+			<key>footerAlignment</key>
+			<integer>1</integer>
+			<key>footerText</key>
+			<string>How long dots vibrate &amp; spaces in between letters don't vibrate</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSliderCell</string>
+			<key>defaults</key>
+			<string>com.sassoty.morsetexts</string>
+			<key>PostNotification</key>
+			<string>com.sassoty.morsetexts/preferencechanged</string>
+			<key>default</key>
+			<real>150.0</real>
+			<key>min</key>
+			<real>1.0</real>
+			<key>max</key>
+			<real>1000.0</real>
+			<key>showValue</key>
+			<true/>
+			<key>key</key>
+			<string>DotLength</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Dash &amp; Word Space Length</string>
+			<key>footerAlignment</key>
+			<integer>1</integer>
+			<key>footerText</key>
+			<string>How long dashes vibrate &amp; spaces in between words don't vibrate</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSliderCell</string>
+			<key>defaults</key>
+			<string>com.sassoty.morsetexts</string>
+			<key>PostNotification</key>
+			<string>com.sassoty.morsetexts/preferencechanged</string>
+			<key>default</key>
+			<real>700.0</real>
+			<key>min</key>
+			<real>1.0</real>
+			<key>max</key>
+			<real>1000.0</real>
+			<key>showValue</key>
+			<true/>
+			<key>key</key>
+			<string>DashLength</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Letter Parts Length</string>
+			<key>footerAlignment</key>
+			<integer>1</integer>
+			<key>footerText</key>
+			<string>How long to not vibrate in between the different symbols that make up each letter (dots and dashes)</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSliderCell</string>
+			<key>defaults</key>
+			<string>com.sassoty.morsetexts</string>
+			<key>PostNotification</key>
+			<string>com.sassoty.morsetexts/preferencechanged</string>
+			<key>default</key>
+			<real>50.0</real>
+			<key>min</key>
+			<real>0.0</real>
+			<key>max</key>
+			<real>1000.0</real>
+			<key>showValue</key>
+			<true/>
+			<key>key</key>
+			<string>LetterPartsLength</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Reset</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Reset to Defaults</string>
+			<key>action</key>
+			<string>resetToDefaults</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>About</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Follow @Sassoty</string>
+			<key>icon</key>
+			<string>Twitter.png</string>
+			<key>action</key>
+			<string>openTwitter</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Support the Developer</string>
+			<key>icon</key>
+			<string>PayPal.png</string>
+			<key>action</key>
+			<string>openDonate</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Visit My Website</string>
+			<key>icon</key>
+			<string>Website.png</string>
+			<key>action</key>
+			<string>openWebsite</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerAlignment</key>
+			<integer>1</integer>
+			<key>footerText</key>
+			<string>MorseTexts © Noah Saso 2014</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>MorseTexts</string>
+</dict>
+</plist>
